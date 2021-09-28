@@ -1,7 +1,7 @@
 FROM php:8.0-fpm
 
-RUN apt-get update
-RUN apt-get install -y git zip unzip libicu-dev
+RUN apt update
+RUN apt install -y git zip unzip libicu-dev
 
 # add extension module
 RUN docker-php-ext-install pdo_mysql intl
